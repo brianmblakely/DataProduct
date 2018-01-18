@@ -1,0 +1,11 @@
+This Shiny app uses the GAPMINDER data set to explore the relationship between GDP and Life Expectancy across countries.
+
+The Shiny app has two reactive inputs.  The first is a slider that allows the user to set a minimum GDP per Capita figure, which serves as a filter limiting the number of countries and data points that populate the graphs.  The second is a radio button selection that allows the user to choose what continent to focus on.  If one selects Africa, for example, only countries from Africa will appear in the graphs.
+
+The Shiny app includes four different tabs on the User Interface:
+1.  The Scatter Plot tab plots GDP vs Life Expectancy for the countries in the continent selected.  The graph also includes the plot for a linear model.
+2.  The Time Series Tab shows the life expectancy by year for the countries included.
+3.  The Box Plot tab contains a box plot of life expectancy for the countries included.
+4.  The Data Table tab inclues all the rows of data included based on the selected filters.
+
+Any changes by the user to either the GDP slider or the continent radio buttons will result in immediate updates to the 4 tabs as a result of reactive expressions in the shiny app.
